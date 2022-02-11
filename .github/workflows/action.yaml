@@ -115,6 +115,6 @@ jobs:
         run: |
             aws lambda update-function-code \
               --function-name mylambdafunction \
-              --s3-bucket githubactionstest2 \
+              --s3-bucket githubaction2 \
               --s3-key ${{ github.repository }}/deploy_package.zip \
               --publish
